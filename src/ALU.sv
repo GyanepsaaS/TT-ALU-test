@@ -1,7 +1,7 @@
 `default_nettype none
 
 module tt_um_ALU
-    (input logic clock, reset_L,
+    (input logic clk, reset_L,
     input logic [1:0] op,
     input logic [3:0] operand,
     output logic [3:0] result
@@ -19,7 +19,7 @@ module tt_um_ALU
         endcase
     end
 
-    always_ff @ (posedge clock, negedge reset_L) begin
+    always_ff @ (posedge clk, negedge reset_L) begin
         if (~reset_L)
             state <= 4'b0;
         else
