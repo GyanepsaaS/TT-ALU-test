@@ -1,6 +1,6 @@
 `default_nettype none
 
-module ALU
+module tt_um_ALU
     (input logic clock, reset_L,
     input logic [1:0] op,
     input logic [3:0] operand,
