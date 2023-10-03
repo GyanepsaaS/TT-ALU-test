@@ -26,4 +26,4 @@ module tt_um_ALU
             state <= nextState;
     end
 
-endmodule: ALU
+endmodule: tt_um_ALU
